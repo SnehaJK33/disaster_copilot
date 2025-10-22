@@ -1,6 +1,3 @@
-Here’s the cleaned-up, star/hashtag-free version of your README, ready for submission:
-
----
 
 Disaster Relief Agent
 
