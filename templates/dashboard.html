@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Disaster-Relief Dashboard</title>
+    <!-- Link CSS from static folder -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>🌐 Disaster-Relief Dashboard</h1>
+        <p>Latest disaster reports and summaries</p>
+    </header>
+
+    <main>
+        {% if summaries %}
+            <div class="cards-container">
+                {% for s in summaries %}
+                <div class="card">
+                    <div class="card-header">
+                        <h2>{{ s.title }}</h2>
+                        {% if 'flood' in s.title|lower %}
+                            <span class="badge flood">Flood</span>
+                        {% elif 'cyclone' in s.title|lower %}
+                            <span class="badge cyclone">Cyclone</span>
+                        {% else %}
+                            <span class="badge other">Other</span>
+                        {% endif %}
+                    </div>
+                    <p>{{ s.summary }}</p>
+                </div>
+                {% endfor %}
+            </div>
+        {% else %}
+            <p class="no-reports">No disaster reports available.</p>
+        {% endif %}
+    </main>
+
+    <footer>
+        <p>© 2025 Disaster Copilot. All rights reserved.</p>
+    </footer>
+
+    <!-- Link JS from static folder -->
+    <script src="{{ url_for('static', filename='js/dashboard.js') }}"></script>
+</body>
+</html>

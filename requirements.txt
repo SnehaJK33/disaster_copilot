@@ -1,0 +1,8 @@
+composio
+openai
+requests
+pandas
+matplotlib
+flask
+fpdf
+python-dotenv
