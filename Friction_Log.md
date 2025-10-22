@@ -1,6 +1,3 @@
-Here’s your complete and submission-ready **Friction_Log.md** file — clean plain-text format, consistent structure, and no markdown symbols or bolding.
-
----
 
 Friction Log
 
