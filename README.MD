@@ -1,4 +1,5 @@
 
+
 Disaster Relief Agent
 
 Hackathon: Composio x DevClub IITD x Chirality Labs – Agents in Production
@@ -102,16 +103,14 @@ Future Work
 
 Team
 
-* Sneha Mohalanobish – Project Lead
-  (Add other team members if any)
+Sneha Mohalanobish – Project Lead
+📧 snehamohalanobish@gmail.com
+Sneha Mandal
+📧 snehamandal885@gmail.com
 
 Notes
 
 * Project is fully executable locally with OpenAI fallback.
 * Ready for hackathon submission even without Tool Router integration.
 
----
 
-If you want, I can **create a ready-to-submit GitHub folder structure** including `run_all.py`, `app.py`, `requirements.txt`, `Friction_Log.md`, `README.md`, and the `static/` folder, so you can push it directly for the hackathon.
-
-Do you want me to do that?
